@@ -1,0 +1,14 @@
+{
+  "name": "path-alerts",
+  "version": "0.0.1",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {}
+}
