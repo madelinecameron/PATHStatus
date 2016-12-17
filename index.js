@@ -1,9 +1,8 @@
 var express = require('express');
-var fs = require('fs');
 var request = require('request');
 var cheerio = require('cheerio');
 
-module.exports.scrape = function (event, context, callback) {
+exports.scrape = function (event, context, callback) {
     var url = 'http://rss.paalerts.com/rss.aspx?PATH';
     var events = [];
 
@@ -39,7 +38,7 @@ function guessLine(description) {
         'HOB-WTC',
         'NWK-WTC',
         'HOB-33',
-        'JSQ-33',
+        'JSQ-33'
     ];
 
     return lines.filter(function (line) {
